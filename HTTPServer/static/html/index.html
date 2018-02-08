@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<form action="/login" method="post">
+
+    用户名:<input type="text" name="username" value="{{.Username}}">
+    <br/>
+    昵称:<input type="text" name="nickname" value="{{.Nickname}}">
+    <input type="button" value="修改昵称" onclick="javascrtpt:window.location.href='/update/nickname'">
+    <br/>
+    图像:<img src="/image"  alt="profile"  width="100px"  height="100px"/>
+    <input type="button" value="修改头像" onclick="javascrtpt:window.location.href='/upload'">
+
+</form>
+</body>
+</html>
